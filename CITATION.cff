@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: >-
+  correlation-threshold-selection: replication package for a benchmark of
+  correlation-threshold feature selection in penalised regression
+message: >-
+  If you use this software or its results, please cite both the software and
+  the paper it accompanies.
+type: software
+authors:
+  - given-names: Abdullah
+    family-names: Hamad
+version: "1.0"
+date-released: "2026-09-14"
+license: MIT
+repository-code: "https://github.com/abdullah-shekha/correlation-threshold-selection"
+abstract: >-
+  A controlled benchmark of correlation-threshold feature selection in penalised
+  regression over 24 public datasets, 9 selection arms and 5 estimators, under
+  nested repeated cross-validation. No pruning arm improved predictive accuracy
+  on any estimator, and harm rose steadily as the threshold tightened. A paired
+  permutation study shows that where the rule acts its output is not determined
+  by the data alone: permuting the input columns moves test error by a median of
+  3.46%, and chance-corrected selection stability across permutations is 0.479
+  against 0.981 for an order-invariant control. The package contains the
+  implementation, the dataset manifest, all 80,100 fold-level results, and a
+  verification script that re-derives every table in the paper from them.
+keywords:
+  - multicollinearity
+  - feature selection
+  - penalised regression
+  - reproducibility
+  - benchmark
+  - variance inflation factor
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Abdullah
+      family-names: Hamad
+  title: >-
+    Correlation-Threshold Feature Selection in Penalised Regression: No
+    Predictive Benefit, and Results That Depend on Column Order
+  year: 2026
+  journal: "FILL IN journal name"
+  volume: "FILL IN volume"
+  issue: "FILL IN issue"
+  start: "FILL IN first page"
+  end: "FILL IN last page"
+  doi: "10.0000/FILL-IN-DOI"
+  url: "https://FILL-IN-ARTICLE-URL"
