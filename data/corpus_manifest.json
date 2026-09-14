@@ -1,0 +1,1075 @@
+{
+  "datasets": {
+    "auto_mpg": {
+      "declared": {
+        "name": "Auto MPG",
+        "source": "uci",
+        "ref": "9",
+        "n": 398,
+        "p": 7,
+        "expected_stratum": "high",
+        "note": "cylinders/displacement/horsepower/weight mutually > 0.85"
+      },
+      "actual": {
+        "n": 392,
+        "p": 7,
+        "n_over_p": 56.0,
+        "condition_number": 136.8352294439986,
+        "max_vif": 21.836791893715738,
+        "mean_vif": 8.427489262967246,
+        "mean_abs_r": 0.566183756487159,
+        "max_abs_r": 0.9508233008277828,
+        "n_pairs_above_80": 6,
+        "effective_rank": 3.024549572407473,
+        "n_constant_columns": 0,
+        "numerical_rank": 7,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 136.8352294439986,
+        "condition_index": 11.697659143777383,
+        "condition_index_trimmed": 11.697659143777383,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 6,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:9",
+        "uci_name": "Auto MPG",
+        "target_from": "targets['mpg']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "abalone": {
+      "declared": {
+        "name": "Abalone",
+        "source": "uci",
+        "ref": "1",
+        "n": 4177,
+        "p": 8,
+        "expected_stratum": "high",
+        "note": "seven shell measurements mutually > 0.9"
+      },
+      "actual": {
+        "n": 4177,
+        "p": 9,
+        "n_over_p": 464.1111111111111,
+        "condition_number": 1024.9211296892936,
+        "max_vif": 109.76870999634657,
+        "mean_vif": 29.701832710162712,
+        "mean_abs_r": 0.6869992251901798,
+        "max_abs_r": 0.9868115846024931,
+        "n_pairs_above_80": 19,
+        "effective_rank": 2.452796928621045,
+        "n_constant_columns": 0,
+        "numerical_rank": 9,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 1024.9211296892936,
+        "condition_index": 32.01438941615619,
+        "condition_index_trimmed": 32.01438941615619,
+        "stratum": "medium"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "Sex"
+        ],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:1",
+        "uci_name": "Abalone",
+        "target_from": "targets['Rings'] (registry said 'rings')"
+      },
+      "stratum_matches_expectation": false
+    },
+    "energy_y1": {
+      "declared": {
+        "name": "Energy Efficiency (heating)",
+        "source": "uci",
+        "ref": "242",
+        "n": 768,
+        "p": 8,
+        "expected_stratum": "high",
+        "note": "relative compactness vs surface area r = -0.99, algebraic"
+      },
+      "actual": {
+        "n": 768,
+        "p": 8,
+        "n_over_p": 96.0,
+        "condition_number": Infinity,
+        "max_vif": 105.52405414446123,
+        "mean_vif": 30.94607707996486,
+        "mean_abs_r": 0.23519254844379459,
+        "max_abs_r": 0.9919014616138844,
+        "n_pairs_above_80": 6,
+        "effective_rank": 4.292515310065844,
+        "n_constant_columns": 0,
+        "numerical_rank": 7,
+        "rank_deficiency": 1,
+        "condition_number_trimmed": 831.0915693272053,
+        "condition_index": Infinity,
+        "condition_index_trimmed": 28.82865881943184,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:242",
+        "uci_name": "Energy Efficiency",
+        "target_from": "targets['Y1']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "energy_y2": {
+      "declared": {
+        "name": "Energy Efficiency (cooling)",
+        "source": "uci",
+        "ref": "242",
+        "n": 768,
+        "p": 8,
+        "expected_stratum": "high",
+        "note": "same design matrix, second target"
+      },
+      "actual": {
+        "n": 768,
+        "p": 8,
+        "n_over_p": 96.0,
+        "condition_number": Infinity,
+        "max_vif": 105.52405414446123,
+        "mean_vif": 30.94607707996486,
+        "mean_abs_r": 0.23519254844379459,
+        "max_abs_r": 0.9919014616138844,
+        "n_pairs_above_80": 6,
+        "effective_rank": 4.292515310065844,
+        "n_constant_columns": 0,
+        "numerical_rank": 7,
+        "rank_deficiency": 1,
+        "condition_number_trimmed": 831.0915693272053,
+        "condition_index": Infinity,
+        "condition_index_trimmed": 28.82865881943184,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:242",
+        "uci_name": "Energy Efficiency",
+        "target_from": "targets['Y2']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "parkinsons_motor": {
+      "declared": {
+        "name": "Parkinsons Telemonitoring",
+        "source": "uci",
+        "ref": "189",
+        "n": 5875,
+        "p": 19,
+        "expected_stratum": "high",
+        "note": "jitter and shimmer families are near-duplicates"
+      },
+      "actual": {
+        "n": 5875,
+        "p": 19,
+        "n_over_p": 309.2105263157895,
+        "condition_number": 540715063.8433318,
+        "max_vif": 23989466.19933784,
+        "mean_vif": 2664613.385591506,
+        "mean_abs_r": 0.477360194039392,
+        "max_abs_r": 0.9999999790883211,
+        "n_pairs_above_80": 28,
+        "effective_rank": 4.695428173000939,
+        "n_constant_columns": 0,
+        "numerical_rank": 19,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 540715063.8433318,
+        "condition_index": 23253.28071140354,
+        "condition_index_trimmed": 23253.28071140354,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:189",
+        "uci_name": "Parkinsons Telemonitoring",
+        "target_from": "targets['motor_UPDRS']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "appliances": {
+      "declared": {
+        "name": "Appliances Energy Prediction",
+        "source": "uci",
+        "ref": "374",
+        "n": 19735,
+        "p": 26,
+        "expected_stratum": "high",
+        "note": "room temperature/humidity sensor pairs"
+      },
+      "actual": {
+        "n": 19735,
+        "p": 26,
+        "n_over_p": 759.0384615384615,
+        "condition_number": 2510.7521045542935,
+        "max_vif": 146.67701082770648,
+        "mean_vif": 21.437921053165724,
+        "mean_abs_r": 0.3113092599895874,
+        "max_abs_r": 0.9747784598093013,
+        "n_pairs_above_80": 35,
+        "effective_rank": 7.6326353455300495,
+        "n_constant_columns": 0,
+        "numerical_rank": 26,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 2510.7521045542935,
+        "condition_index": 50.10740568572967,
+        "condition_index_trimmed": 50.10740568572967,
+        "stratum": "medium"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [
+          "date"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [
+          "rv2"
+        ],
+        "resolved": "uci:374",
+        "uci_name": "Appliances Energy Prediction",
+        "target_from": "targets['Appliances']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "bike_hour": {
+      "declared": {
+        "name": "Bike Sharing (hourly)",
+        "source": "uci",
+        "ref": "275",
+        "n": 17379,
+        "p": 12,
+        "expected_stratum": "high",
+        "note": "temp vs atemp r = 0.99"
+      },
+      "actual": {
+        "n": 17379,
+        "p": 12,
+        "n_over_p": 1448.25,
+        "condition_number": 216.8119396197964,
+        "max_vif": 43.96403450598318,
+        "mean_vif": 8.649787012547801,
+        "mean_abs_r": 0.09645493237165317,
+        "max_abs_r": 0.9876721390396487,
+        "n_pairs_above_80": 2,
+        "effective_rank": 9.459537128842197,
+        "n_constant_columns": 0,
+        "numerical_rank": 12,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 216.8119396197964,
+        "condition_index": 14.724535293848712,
+        "condition_index_trimmed": 14.724535293848712,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [
+          "dteday"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:275",
+        "uci_name": "Bike Sharing",
+        "target_from": "targets['cnt']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "superconduct": {
+      "declared": {
+        "name": "Superconductivity",
+        "source": "uci",
+        "ref": "464",
+        "n": 21263,
+        "p": 81,
+        "expected_stratum": "high",
+        "note": "engineered aggregates of the same base quantities"
+      },
+      "actual": {
+        "n": 21263,
+        "p": 81,
+        "n_over_p": 262.5061728395062,
+        "condition_number": 635822.4781917505,
+        "max_vif": 8433.87175033733,
+        "mean_vif": 783.5465122017808,
+        "mean_abs_r": 0.3446539283695282,
+        "max_abs_r": 0.9977393708000537,
+        "n_pairs_above_80": 159,
+        "effective_rank": 10.452946128020447,
+        "n_constant_columns": 0,
+        "numerical_rank": 81,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 635822.4781917505,
+        "condition_index": 797.3847742412382,
+        "condition_index_trimmed": 797.3847742412382,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:464",
+        "uci_name": "Superconductivty Data",
+        "target_from": "targets['critical_temp']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "concrete": {
+      "declared": {
+        "name": "Concrete Compressive Strength",
+        "source": "uci",
+        "ref": "165",
+        "n": 1030,
+        "p": 8,
+        "expected_stratum": "medium",
+        "note": ""
+      },
+      "actual": {
+        "n": 1030,
+        "p": 8,
+        "n_over_p": 128.75,
+        "condition_number": 75.89508844195318,
+        "max_vif": 7.488943791050566,
+        "mean_vif": 5.512792323343193,
+        "mean_abs_r": 0.20748691226489363,
+        "max_abs_r": 0.657532907628447,
+        "n_pairs_above_80": 0,
+        "effective_rank": 6.127914860459657,
+        "n_constant_columns": 0,
+        "numerical_rank": 8,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 75.89508844195318,
+        "condition_index": 8.711778718605816,
+        "condition_index_trimmed": 8.711778718605816,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:165",
+        "uci_name": "Concrete Compressive Strength",
+        "target_from": "targets['Concrete compressive strength'] (registry said 'strength')"
+      },
+      "stratum_matches_expectation": false
+    },
+    "diabetes": {
+      "declared": {
+        "name": "Diabetes",
+        "source": "sklearn",
+        "ref": "load_diabetes",
+        "n": 442,
+        "p": 10,
+        "expected_stratum": "medium",
+        "note": "s1/s2 serum measurements correlated; canonical small benchmark"
+      },
+      "actual": {
+        "n": 442,
+        "p": 10,
+        "n_over_p": 44.2,
+        "condition_number": 470.0779993589028,
+        "max_vif": 59.2025101343226,
+        "mean_vif": 13.971385489510785,
+        "mean_abs_r": 0.3217536158295439,
+        "max_abs_r": 0.8966629578104903,
+        "n_pairs_above_80": 1,
+        "effective_rank": 6.145858093815257,
+        "n_constant_columns": 0,
+        "numerical_rank": 10,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 470.0779993589028,
+        "condition_index": 21.68128223511937,
+        "condition_index_trimmed": 21.68128223511937,
+        "stratum": "low"
+      },
+      "provenance": {
+        "resolved": "sklearn.datasets.load_diabetes",
+        "target_from": "bunch.target"
+      },
+      "stratum_matches_expectation": false
+    },
+    "real_estate": {
+      "declared": {
+        "name": "Real Estate Valuation",
+        "source": "uci",
+        "ref": "477",
+        "n": 414,
+        "p": 6,
+        "expected_stratum": "medium",
+        "note": ""
+      },
+      "actual": {
+        "n": 414,
+        "p": 6,
+        "n_over_p": 69.0,
+        "condition_number": 17.81351776938796,
+        "max_vif": 4.323019469033119,
+        "mean_vif": 2.0842590170247486,
+        "mean_abs_r": 0.24322846398455575,
+        "max_abs_r": 0.8063167695693765,
+        "n_pairs_above_80": 1,
+        "effective_rank": 4.489461825846136,
+        "n_constant_columns": 0,
+        "numerical_rank": 6,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 17.81351776938796,
+        "condition_index": 4.220606327222187,
+        "condition_index_trimmed": 4.220606327222187,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:477",
+        "uci_name": "Real Estate Valuation",
+        "target_from": "targets['Y house price of unit area'] (registry said 'house_price_unit_area')"
+      },
+      "stratum_matches_expectation": false
+    },
+    "automobile": {
+      "declared": {
+        "name": "Automobile",
+        "source": "uci",
+        "ref": "10",
+        "n": 205,
+        "p": 15,
+        "expected_stratum": "medium",
+        "note": "UCI declares 'symboling' as target; we predict price, which sits in features"
+      },
+      "actual": {
+        "n": 159,
+        "p": 33,
+        "n_over_p": 4.818181818181818,
+        "condition_number": Infinity,
+        "max_vif": 130.62058370828726,
+        "mean_vif": 17.553800285851608,
+        "mean_abs_r": 0.24416719086859193,
+        "max_abs_r": 1.0,
+        "n_pairs_above_80": 15,
+        "effective_rank": 12.344904812785751,
+        "n_constant_columns": 0,
+        "numerical_rank": 32,
+        "rank_deficiency": 1,
+        "condition_number_trimmed": 2002.3624597726662,
+        "condition_index": Infinity,
+        "condition_index_trimmed": 44.7477648578414,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 46,
+        "onehot_encoded": [
+          "fuel-system",
+          "engine-type",
+          "engine-location",
+          "drive-wheels",
+          "body-style",
+          "aspiration",
+          "fuel-type"
+        ],
+        "dropped_high_cardinality": [
+          "make"
+        ],
+        "dropped_constant": [
+          "fuel-system_4bbl",
+          "fuel-system_spfi",
+          "engine-type_dohcv",
+          "engine-type_rotor",
+          "engine-location_rear"
+        ],
+        "dropped_duplicate": [],
+        "resolved": "uci:10",
+        "uci_name": "Automobile",
+        "target_from": "features['price']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "cpu_perf": {
+      "declared": {
+        "name": "Computer Hardware",
+        "source": "uci",
+        "ref": "29",
+        "n": 209,
+        "p": 6,
+        "expected_stratum": "medium",
+        "note": "cache and memory bounds correlated; small n"
+      },
+      "actual": {
+        "n": 209,
+        "p": 7,
+        "n_over_p": 29.857142857142858,
+        "condition_number": 69.50129493704371,
+        "max_vif": 11.219488215452369,
+        "mean_vif": 4.191146691777177,
+        "mean_abs_r": 0.5127688149572786,
+        "max_abs_r": 0.9012023724206505,
+        "n_pairs_above_80": 2,
+        "effective_rank": 3.682869492844159,
+        "n_constant_columns": 0,
+        "numerical_rank": 7,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 69.50129493704371,
+        "condition_index": 8.336743665067537,
+        "condition_index_trimmed": 8.336743665067537,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [
+          "VendorName",
+          "ModelName"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:29",
+        "uci_name": "Computer Hardware",
+        "target_from": "features['PRP']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "student_por": {
+      "declared": {
+        "name": "Student Performance (Portuguese)",
+        "source": "uci",
+        "ref": "320",
+        "n": 649,
+        "p": 30,
+        "expected_stratum": "medium",
+        "note": "G1/G2 prior grades strongly predict G3"
+      },
+      "actual": {
+        "n": 649,
+        "p": 39,
+        "n_over_p": 16.641025641025642,
+        "condition_number": 34.853763269115454,
+        "max_vif": 4.671694617602543,
+        "mean_vif": 1.6343108411017955,
+        "mean_abs_r": 0.07017448335651766,
+        "max_abs_r": 0.7094549755755595,
+        "n_pairs_above_80": 0,
+        "effective_rank": 32.4113612430471,
+        "n_constant_columns": 0,
+        "numerical_rank": 39,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 34.853763269115454,
+        "condition_index": 5.9037075866878315,
+        "condition_index_trimmed": 5.9037075866878315,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "school",
+          "sex",
+          "address",
+          "famsize",
+          "Pstatus",
+          "Mjob",
+          "Fjob",
+          "reason",
+          "guardian",
+          "schoolsup",
+          "famsup",
+          "paid",
+          "activities",
+          "nursery",
+          "higher",
+          "internet",
+          "romantic"
+        ],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:320",
+        "uci_name": "Student Performance",
+        "target_from": "targets['G3']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "communities": {
+      "declared": {
+        "name": "Communities and Crime",
+        "source": "uci",
+        "ref": "183",
+        "n": 1994,
+        "p": 100,
+        "expected_stratum": "medium",
+        "note": "wide; many demographic rates co-move"
+      },
+      "actual": {
+        "n": 1994,
+        "p": 104,
+        "n_over_p": 19.173076923076923,
+        "condition_number": 39971.06993544714,
+        "max_vif": 1038.3914832431553,
+        "mean_vif": 81.51379191965151,
+        "mean_abs_r": 0.23713752262783913,
+        "max_abs_r": 0.9955254221262787,
+        "n_pairs_above_80": 128,
+        "effective_rank": 18.701261292757863,
+        "n_constant_columns": 0,
+        "numerical_rank": 104,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 39971.06993544714,
+        "condition_index": 199.9276617565642,
+        "condition_index_trimmed": 199.9276617565642,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "LemasGangUnitDeploy"
+        ],
+        "dropped_high_cardinality": [
+          "county",
+          "community",
+          "communityname",
+          "OtherPerCap",
+          "LemasSwornFT",
+          "LemasSwFTPerPop",
+          "LemasSwFTFieldOps",
+          "LemasSwFTFieldPerPop",
+          "LemasTotalReq",
+          "LemasTotReqPerPop",
+          "PolicReqPerOffic",
+          "PolicPerPop",
+          "RacialMatchCommPol",
+          "PctPolicWhite",
+          "PctPolicBlack",
+          "PctPolicHisp",
+          "PctPolicAsian",
+          "PctPolicMinor",
+          "OfficAssgnDrugUnits",
+          "NumKindsDrugsSeiz",
+          "PolicAveOTWorked",
+          "PolicCars",
+          "PolicOperBudg",
+          "LemasPctPolicOnPatr",
+          "PolicBudgPerPop"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:183",
+        "uci_name": "Communities and Crime",
+        "target_from": "targets['ViolentCrimesPerPop']"
+      },
+      "stratum_matches_expectation": false
+    },
+    "gas_turbine": {
+      "declared": {
+        "name": "Gas Turbine CO and NOx Emission",
+        "source": "uci",
+        "ref": "551",
+        "n": 36733,
+        "p": 9,
+        "expected_stratum": "medium",
+        "note": "subsample to 20k for tractability"
+      },
+      "actual": {
+        "n": 36733,
+        "p": 11,
+        "n_over_p": 3339.3636363636365,
+        "condition_number": 1015.3677765379949,
+        "max_vif": 147.72319103325088,
+        "mean_vif": 26.732865771282594,
+        "mean_abs_r": 0.29115214641141857,
+        "max_abs_r": 0.9784699443806786,
+        "n_pairs_above_80": 3,
+        "effective_rank": 5.884576744358567,
+        "n_constant_columns": 0,
+        "numerical_rank": 11,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 1015.3677765379949,
+        "condition_index": 31.86483605070007,
+        "condition_index_trimmed": 31.86483605070007,
+        "stratum": "medium"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:551",
+        "uci_name": "Gas Turbine CO and NOx Emission Data Set",
+        "target_from": "features['TEY']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "california": {
+      "declared": {
+        "name": "California Housing",
+        "source": "sklearn",
+        "ref": "fetch_california_housing",
+        "n": 20640,
+        "p": 8,
+        "expected_stratum": "medium",
+        "note": "AveRooms/AveBedrms correlated"
+      },
+      "actual": {
+        "n": 20640,
+        "p": 8,
+        "n_over_p": 2580.0,
+        "condition_number": 44.46514975130433,
+        "max_vif": 9.297624369314335,
+        "mean_vif": 4.935833298930439,
+        "mean_abs_r": 0.132441845545477,
+        "max_abs_r": 0.9246644339150407,
+        "n_pairs_above_80": 2,
+        "effective_rank": 5.970691270363585,
+        "n_constant_columns": 0,
+        "numerical_rank": 8,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 44.46514975130433,
+        "condition_index": 6.668219383861357,
+        "condition_index_trimmed": 6.668219383861357,
+        "stratum": "low"
+      },
+      "provenance": {
+        "resolved": "sklearn.datasets.fetch_california_housing",
+        "target_from": "bunch.target"
+      },
+      "stratum_matches_expectation": false
+    },
+    "airfoil": {
+      "declared": {
+        "name": "Airfoil Self-Noise",
+        "source": "uci",
+        "ref": "291",
+        "n": 1503,
+        "p": 5,
+        "expected_stratum": "low",
+        "note": ""
+      },
+      "actual": {
+        "n": 1503,
+        "p": 5,
+        "n_over_p": 300.6,
+        "condition_number": 12.099469714098944,
+        "max_vif": 3.4416575192698042,
+        "mean_vif": 1.9341362027026414,
+        "mean_abs_r": 0.21858209312413454,
+        "max_abs_r": 0.7533937846545846,
+        "n_pairs_above_80": 0,
+        "effective_rank": 4.047597057375118,
+        "n_constant_columns": 0,
+        "numerical_rank": 5,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 12.099469714098944,
+        "condition_index": 3.478429202111054,
+        "condition_index_trimmed": 3.478429202111054,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:291",
+        "uci_name": "Airfoil Self-Noise",
+        "target_from": "targets['scaled-sound-pressure'] (registry said 'scaled_sound_pressure')"
+      },
+      "stratum_matches_expectation": true
+    },
+    "servo": {
+      "declared": {
+        "name": "Servo",
+        "source": "uci",
+        "ref": "87",
+        "n": 167,
+        "p": 4,
+        "expected_stratum": "low",
+        "note": "smallest n in corpus"
+      },
+      "actual": {
+        "n": 167,
+        "p": 10,
+        "n_over_p": 16.7,
+        "condition_number": 11.543355878480511,
+        "max_vif": 3.2645900692154375,
+        "mean_vif": 1.8509525547166508,
+        "mean_abs_r": 0.10384479380350593,
+        "max_abs_r": 0.8122683058183874,
+        "n_pairs_above_80": 1,
+        "effective_rank": 8.435839632989525,
+        "n_constant_columns": 0,
+        "numerical_rank": 10,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 11.543355878480511,
+        "condition_index": 3.397551453397065,
+        "condition_index_trimmed": 3.397551453397065,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "motor",
+          "screw"
+        ],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:87",
+        "uci_name": "Servo",
+        "target_from": "targets['class']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "forest_fires": {
+      "declared": {
+        "name": "Forest Fires",
+        "source": "uci",
+        "ref": "162",
+        "n": 517,
+        "p": 12,
+        "expected_stratum": "low",
+        "note": "very hard target; useful as a low-signal control"
+      },
+      "actual": {
+        "n": 517,
+        "p": 16,
+        "n_over_p": 32.3125,
+        "condition_number": 15.713901308929982,
+        "max_vif": 2.7633176296614526,
+        "mean_vif": 1.7239208951550808,
+        "mean_abs_r": 0.1083142142310083,
+        "max_abs_r": 0.6821916119833169,
+        "n_pairs_above_80": 0,
+        "effective_rank": 13.02766450587423,
+        "n_constant_columns": 0,
+        "numerical_rank": 16,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 15.713901308929982,
+        "condition_index": 3.964076350037923,
+        "condition_index_trimmed": 3.964076350037923,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "day"
+        ],
+        "dropped_high_cardinality": [
+          "month"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:162",
+        "uci_name": "Forest Fires",
+        "target_from": "targets['area']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "istanbul_se": {
+      "declared": {
+        "name": "Istanbul Stock Exchange",
+        "source": "uci",
+        "ref": "247",
+        "n": 536,
+        "p": 8,
+        "expected_stratum": "low",
+        "note": ""
+      },
+      "actual": {
+        "n": 536,
+        "p": 7,
+        "n_over_p": 76.57142857142857,
+        "condition_number": 152.94016117272267,
+        "max_vif": 22.039752748755593,
+        "mean_vif": 7.55834709362208,
+        "mean_abs_r": 0.5830467363766454,
+        "max_abs_r": 0.9489633564473242,
+        "n_pairs_above_80": 3,
+        "effective_rank": 2.993091458090338,
+        "n_constant_columns": 0,
+        "numerical_rank": 7,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 152.94016117272267,
+        "condition_index": 12.366897799073245,
+        "condition_index_trimmed": 12.366897799073245,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [],
+        "dropped_high_cardinality": [
+          "date"
+        ],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:247",
+        "uci_name": "ISTANBUL STOCK EXCHANGE",
+        "target_from": "features['ISE']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "garment": {
+      "declared": {
+        "name": "Garment Employee Productivity",
+        "source": "uci",
+        "ref": "597",
+        "n": 1197,
+        "p": 14,
+        "expected_stratum": "low",
+        "note": ""
+      },
+      "actual": {
+        "n": 691,
+        "p": 19,
+        "n_over_p": 36.36842105263158,
+        "condition_number": 11.677626916338829,
+        "max_vif": 1.8286926770695704,
+        "mean_vif": 1.5579338845526824,
+        "mean_abs_r": 0.07757039636320337,
+        "max_abs_r": 0.5775038598846051,
+        "n_pairs_above_80": 0,
+        "effective_rank": 16.24199528223842,
+        "n_constant_columns": 0,
+        "numerical_rank": 19,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 11.677626916338829,
+        "condition_index": 3.417254294947748,
+        "condition_index_trimmed": 3.417254294947748,
+        "stratum": "low"
+      },
+      "provenance": {
+        "rows_dropped_na": 506,
+        "onehot_encoded": [
+          "quarter",
+          "department",
+          "day"
+        ],
+        "dropped_high_cardinality": [
+          "date"
+        ],
+        "dropped_constant": [
+          "department_sweing"
+        ],
+        "dropped_duplicate": [],
+        "resolved": "uci:597",
+        "uci_name": "Productivity Prediction of Garment Employees",
+        "target_from": "targets['actual_productivity']"
+      },
+      "stratum_matches_expectation": true
+    },
+    "solar_flare": {
+      "declared": {
+        "name": "Solar Flare",
+        "source": "uci",
+        "ref": "89",
+        "n": 1066,
+        "p": 10,
+        "expected_stratum": "low",
+        "note": ""
+      },
+      "actual": {
+        "n": 1389,
+        "p": 19,
+        "n_over_p": 73.10526315789474,
+        "condition_number": 1682.075642565767,
+        "max_vif": 153.38833546520993,
+        "mean_vif": 31.880531435053058,
+        "mean_abs_r": 0.13761773588105197,
+        "max_abs_r": 0.5728346150139201,
+        "n_pairs_above_80": 0,
+        "effective_rank": 14.251326826220831,
+        "n_constant_columns": 0,
+        "numerical_rank": 19,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 1682.075642565767,
+        "condition_index": 41.01311549450696,
+        "condition_index_trimmed": 41.01311549450696,
+        "stratum": "medium"
+      },
+      "provenance": {
+        "rows_dropped_na": 0,
+        "onehot_encoded": [
+          "modified Zurich class",
+          "largest spot size",
+          "spot distribution"
+        ],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [
+          "spot distribution_X"
+        ],
+        "resolved": "uci:89",
+        "uci_name": "Solar Flare",
+        "target_from": "targets['common flares'] (registry said 'c_class')"
+      },
+      "stratum_matches_expectation": false
+    },
+    "facebook": {
+      "declared": {
+        "name": "Facebook Metrics",
+        "source": "uci",
+        "ref": "368",
+        "n": 500,
+        "p": 7,
+        "expected_stratum": "low",
+        "note": ""
+      },
+      "actual": {
+        "n": 495,
+        "p": 20,
+        "n_over_p": 24.75,
+        "condition_number": 12125.827460828938,
+        "max_vif": 1055.6969693108424,
+        "mean_vif": 107.47648731680292,
+        "mean_abs_r": 0.20751619787797107,
+        "max_abs_r": 0.9680881245404587,
+        "n_pairs_above_80": 8,
+        "effective_rank": 10.184204287145862,
+        "n_constant_columns": 0,
+        "numerical_rank": 20,
+        "rank_deficiency": 0,
+        "condition_number_trimmed": 12125.827460828938,
+        "condition_index": 110.1173349696992,
+        "condition_index_trimmed": 110.1173349696992,
+        "stratum": "high"
+      },
+      "provenance": {
+        "rows_dropped_na": 5,
+        "onehot_encoded": [
+          "Type"
+        ],
+        "dropped_high_cardinality": [],
+        "dropped_constant": [],
+        "dropped_duplicate": [],
+        "resolved": "uci:368",
+        "uci_name": "Facebook Metrics",
+        "target_from": "targets['Total Interactions'] (registry said 'Total_Interactions')"
+      },
+      "stratum_matches_expectation": false
+    }
+  },
+  "failures": []
+}

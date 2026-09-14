@@ -1,0 +1,21 @@
+{
+  "_comment": [
+    "Runtime guard, and the machine-readable half of a record kept in",
+    "colreg/data/registry.py (see NOT_ADOPTED).",
+    "",
+    "The corpus is defined in registry.py as 24 datasets. This file exists",
+    "because scripts/run_study.py discovers datasets by globbing data/cache/,",
+    "so a .npz left over from characterisation would otherwise be picked up and",
+    "run even though it is not part of the corpus. Listing it here keeps the",
+    "runner in agreement with the corpus definition.",
+    "",
+    "Nothing here was ever run: no shard exists for any dataset in this list,",
+    "so no result could have influenced its being set aside. A dataset dropped",
+    "AFTER its results were seen would not belong here -- that is a selection",
+    "effect, and it would have to be disclosed. Units merely too expensive to",
+    "run are passed to run_study.py --skip and reported as missing coverage."
+  ],
+  "datasets": {
+    "wine_quality": "Not adopted into the corpus: UCI id 186 serves red and white wine as one file, so the design matrix pools two chemically distinct populations and fails the single-population inclusion criterion. Never run; no shard exists."
+  }
+}
