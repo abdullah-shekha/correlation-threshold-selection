@@ -38,7 +38,7 @@ tar -xzf results/shards.tar.gz
 .venv/bin/python scripts/verify_findings.py
 ```
 
-`verify_findings.py` re-derives every table in the manuscript directly from the
+`verify_findings.py` re-derives every table in the paper directly from the
 shards, using logic written independently of the analysis code, and diffs the
 result against the published values. It should end with **"All documented values
 reproduce from the shards."**
@@ -134,8 +134,7 @@ arrays derived from those sources and carry the licence of each original.
 
 ## Citing
 
-If you use this code or the results, please cite the paper. See `CITATION.cff`,
-which GitHub also renders as a "Cite this repository" link.
+If you use this code or the results, please cite the paper. See `CITATION.cff`.
 
 ## Licence
 
