@@ -1,0 +1,12 @@
+[project]
+name = "colreg"
+version = "0.1.0"
+description = "Correlation-threshold pruning vs. regularisation: a controlled benchmark"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning"]
+
+[tool.setuptools.packages.find]
+include = ["colreg*"]
