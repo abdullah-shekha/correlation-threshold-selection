@@ -134,8 +134,8 @@ arrays derived from those sources and carry the licence of each original.
 
 ## Citing
 
-If you use this code or the results, please cite the paper. See `CITATION.cff`.
+If you use this code or the results, please cite the paper. See [CITATION.cff](CITATION.cff).
 
 ## Licence
 
-MIT. See `LICENSE`.
+MIT. See [LICENSE](LICENSE).
